@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gerador de Guias DETRAN/BA</title>
+  <link rel="icon" type="image/x-icon" href="icon/1f3f7.ico" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="guias.css" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="logo"><img class="logo-cabec" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIzLjAuNCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkNhbWFkYV8yIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB2aWV3Qm94PSIwIDAgMjgzLjQ2IDI4My40NiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjgzLjQ2IDI4My40NjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLnN0MHtmaWxsOiNGRkZGRkY7fQoJLnN0MXtmaWxsOiNFQ0IzMUY7fQo8L3N0eWxlPgo8Zz4KCTxnPgoJCTxnPgoJCQk8cGF0aCBkPSJNMTQxLjc0LDIwLjRjLTE4Ljg3LDAtMzQuMTcsMTUuMy0zNC4xNywzNC4xNmMwLDE4Ljg3LDE1LjMsMzQuMTcsMzQuMTcsMzQuMTdjMTguODYsMCwzNC4xNi0xNS4zLDM0LjE2LTM0LjE3CgkJCQlDMTc1LjksMzUuNywxNjAuNiwyMC40LDE0MS43NCwyMC40eiBNMTQxLjc0LDgzLjc0Yy0xNi4xMiwwLTI5LjE4LTEzLjA3LTI5LjE4LTI5LjE4YzAtMTYuMTEsMTMuMDctMjkuMTcsMjkuMTgtMjkuMTcKCQkJCWMxNi4xMSwwLDI5LjE3LDEzLjA3LDI5LjE3LDI5LjE3QzE3MC45MSw3MC42OCwxNTcuODQsODMuNzQsMTQxLjc0LDgzLjc0eiIvPgoJCQk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTcwLjkxLDU0LjU2YzAsMTYuMTItMTMuMDcsMjkuMTgtMjkuMTcsMjkuMThjLTE2LjEyLDAtMjkuMTgtMTMuMDctMjkuMTgtMjkuMTgKCQkJCWMwLTE2LjExLDEzLjA3LTI5LjE3LDI5LjE4LTI5LjE3QzE1Ny44NCwyNS4zOSwxNzAuOTEsMzguNDUsMTcwLjkxLDU0LjU2eiIvPgoJCTwvZz4KCQk8Zz4KCQkJPHBhdGggZD0iTTE0MS43NCwxMDcuNTdjLTE4Ljg3LDAtMzQuMTcsMTUuMy0zNC4xNywzNC4xNmMwLDE4Ljg3LDE1LjMsMzQuMTcsMzQuMTcsMzQuMTdjMTguODYsMCwzNC4xNi0xNS4zLDM0LjE2LTM0LjE3CgkJCQlDMTc1LjksMTIyLjg3LDE2MC42LDEwNy41NywxNDEuNzQsMTA3LjU3eiBNMTQxLjc0LDE3MC45MWMtMTYuMTIsMC0yOS4xOC0xMy4wNy0yOS4xOC0yOS4xOGMwLTE2LjExLDEzLjA3LTI5LjE3LDI5LjE4LTI5LjE3CgkJCQljMTYuMTEsMCwyOS4xNywxMy4wNywyOS4xNywyOS4xN0MxNzAuOTEsMTU3Ljg0LDE1Ny44NCwxNzAuOTEsMTQxLjc0LDE3MC45MXoiLz4KCQkJPHBhdGggY2xhc3M9InN0MSIgZD0iTTE3MC45MSwxNDEuNzNjMCwxNi4xMi0xMy4wNywyOS4xOC0yOS4xNywyOS4xOGMtMTYuMTIsMC0yOS4xOC0xMy4wNy0yOS4xOC0yOS4xOAoJCQkJYzAtMTYuMTEsMTMuMDctMjkuMTcsMjkuMTgtMjkuMTdDMTU3Ljg0LDExMi41NSwxNzAuOTEsMTI1LjYyLDE3MC45MSwxNDEuNzN6Ii8+CgkJPC9nPgoJCTxnPgoJCQk8cGF0aCBkPSJNMTQxLjc0LDE5NC43M2MtMTguODcsMC0zNC4xNywxNS4zLTM0LjE3LDM0LjE2YzAsMTguODcsMTUuMywzNC4xNywzNC4xNywzNC4xN2MxOC44NiwwLDM0LjE2LTE1LjMsMzQuMTYtMzQuMTcKCQkJCUMxNzUuOSwyMTAuMDMsMTYwLjYsMTk0LjczLDE0MS43NCwxOTQuNzN6IE0xNDEuNzQsMjU4LjA4Yy0xNi4xMiwwLTI5LjE4LTEzLjA3LTI5LjE4LTI5LjE4YzAtMTYuMTEsMTMuMDctMjkuMTcsMjkuMTgtMjkuMTcKCQkJCWMxNi4xMSwwLDI5LjE3LDEzLjA3LDI5LjE3LDI5LjE3QzE3MC45MSwyNDUuMDEsMTU3Ljg0LDI1OC4wOCwxNDEuNzQsMjU4LjA4eiIvPgoJCQk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTcwLjkxLDIyOC44OWMwLDE2LjEyLTEzLjA3LDI5LjE4LTI5LjE3LDI5LjE4Yy0xNi4xMiwwLTI5LjE4LTEzLjA3LTI5LjE4LTI5LjE4CgkJCQljMC0xNi4xMSwxMy4wNy0yOS4xNywyOS4xOC0yOS4xN0MxNTcuODQsMTk5LjcyLDE3MC45MSwyMTIuNzksMTcwLjkxLDIyOC44OXoiLz4KCQk8L2c+Cgk8L2c+Cgk8Zz4KCQk8cG9seWdvbiBwb2ludHM9IjI2OS4yOSwxNDIuNDUgMTk2Ljk3LDIxNC43NyAxNjQuODcsMTgyLjY3IDIwNS4xLDE0Mi40NSAxNjMuNDMsMTAwLjc5IDE5NS41Myw2OC42OSAJCSIvPgoJCTxwb2x5Z29uIHBvaW50cz0iMTQuMTcsMTQxLjAxIDg2LjQ5LDY4LjY5IDExOC41OSwxMDAuNzkgNzguMzYsMTQxLjAxIDEyMC4wMywxODIuNjcgODcuOTMsMjE0Ljc3IAkJIi8+Cgk8L2c+CjwvZz4KPC9zdmc+Cg=="></div>
+    <div class="titulo">
+      <h1>Gerador de Guias DETRAN/BA</h1>
+    </div>
+    <div class="nav-links">
+      <a href="index.html" style="color: #f8f8f7;">Início</a>
+      <a href="guias.html" class="create" style="color: #ffeb3b;">Guias</a>
+    </div>
+  </nav>
+
+  <main class="main-container">
+    <section class="form-section">
+      <h2>Gerar Guia</h2>
+
+      <div class="qr-reader" style="text-align: center;">
+        <label><b>Leitor de QR Code (Webcam)</b></label>
+
+        <div style="margin-top: 10px; margin-bottom: 10px;">
+          <button type="button" id="btn-start-camera"
+            style="margin-top: 0; padding: 6px 15px; background: #0d47a1; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 14px;">Iniciar
+            Câmera</button>
+        </div>
+
+        <!-- Vídeo nativo controlado via jsQR -->
+        <div id="video-container"
+          style="display:none; width: 100%; max-width: 400px; margin: 10px auto; position: relative; border: 2px solid #ccc; border-radius: 8px; overflow: hidden; background: #000;">
+          <video id="qr-video" style="width: 100%; display: block;" playsinline autoplay></video>
+          <canvas id="qr-canvas" style="display: none;"></canvas>
+          <!-- Mira verde para orientar o usuário -->
+          <div
+            style="position: absolute; top: 50%; left: 50%; width: 200px; height: 200px; margin-top: -100px; margin-left: -100px; border: 2px dashed #00ff00; box-sizing: border-box; pointer-events: none;">
+          </div>
+        </div>
+
+        <div id="qr-message" style="font-weight: bold; margin-top: 10px; display: none; font-size: 16px;"></div>
+      </div>
+
+      <form id="guia-form">
+        <div style="background-color: #0d47a1; color: white; padding: 15px; border-radius: 8px; margin-bottom: 25px;">
+          <div
+            style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.3); padding-bottom: 10px; margin-bottom: 15px;">
+            <h3 style="margin: 0; font-size: 16px; color: white;">Dados do Equipamento (Atual)</h3>
+            <label style="margin: 0; display: flex; align-items: center; gap: 10px; font-size: 14px; color: white;">
+              <b>EQUIPAMENTO:</b>
+              <select id="g-tipo-equipamento"
+                style="padding: 5px; border: 1px solid #ccc; border-radius: 4px; font-size: 14px; background-color: white; color: black;">
+                <option value="Monitor">Monitor</option>
+                <option value="Teclado">Teclado</option>
+                <option value="Mouse">Mouse</option>
+                <option value="Computador" selected>Computador</option>
+                <option value="Switch">Switch</option>
+                <option value="Estabilizador">Estabilizador</option>
+                <option value="notebook">Notebook</option>
+                <option value="projetor">Projetor</option>
+                <option value="Webcam">Webcam</option>
+              </select>
+            </label>
+          </div>
+          <div class="grid" style="margin-bottom: 15px;">
+            <label id="lbl-modelo" style="color: white;">Modelo/Marca <input type="text" id="g-equipamento"
+                placeholder="Ex: DATEN, HP..."
+                style="background-color: white; color: black; margin-top: 5px;" /></label>
+            <label id="lbl-hostname" style="color: white;">Nome da Máquina <input type="text" id="g-hostname"
+                style="background-color: white; color: black; margin-top: 5px;" /></label>
+            <label id="lbl-ip" style="color: white;">Endereço IP <input type="text" id="g-ip"
+                style="background-color: white; color: black; margin-top: 5px;" /></label>
+            <label id="lbl-patrimonio" style="color: white;">Patrimônio 
+              <div class="input-icon-wrapper">
+                <input type="text" id="g-patrimonio" style="background-color: white; color: black;" />
+                <button type="button" class="btn-input-camera" data-target="g-patrimonio" title="Ler Código">📷</button>
+              </div>
+            </label>
+            <label id="lbl-serial" style="color: white;">Nº de Série 
+              <div class="input-icon-wrapper">
+                <input type="text" id="g-serial" style="background-color: white; color: black;" />
+                <button type="button" class="btn-input-camera" data-target="g-serial" title="Ler Código">📷</button>
+              </div>
+            </label>
+          </div>
+          <button type="button" id="btn-add-equipamento"
+            style="margin-top: 10px; margin-bottom: 0; background: #28a745; color: white; border: none;">Adicionar
+            Equipamento</button>
+        </div>
+
+        <h3
+          style="margin-top: 10px; margin-bottom: 10px; font-size: 16px; border-bottom: 1px solid #ddd; padding-bottom: 5px;">
+          Dados da Guia</h3>
+        <div class="grid">
+          <label>Setor Remetente <input type="text" id="g-remetente" required /></label>
+          <label>Número de Chamado <input type="text" id="g-chamado" /></label>
+          <label>Destinatário <input type="text" id="g-destinatario" required /></label>
+          <label>Tipo de Guia
+            <select id="g-tipo" required
+              style="padding: 8px; border: 1px solid #ccc; border-radius: 4px; font-size: 16px;">
+              <option value="GUIA DE SAÍDA">GUIA DE SAÍDA</option>
+              <option value="GUIA DE ENTRADA">GUIA DE ENTRADA</option>
+            </select>
+          </label>
+          <label>Responsável CTI <input type="text" id="g-responsavel"
+              placeholder="Deixe branco p/ preencher à mão" /></label>
+        </div>
+      </form>
+
+      <div class="info-box" style="margin-top: 20px; display: flex; flex-wrap: wrap; align-items: center; gap: 15px;">
+        <button type="button" id="btn-imprimir-guia" style="margin: 0;">Imprimir Guia</button>
+        <button type="button" id="btn-compartilhar-guia" class="btn-compartilhar" style="margin: 0;">Compartilhar PDF</button>
+        <label style="cursor: pointer; display: flex; align-items: center; gap: 5px; font-weight: bold;">
+          <input type="checkbox" id="chk-usar-data" checked /> Usar data de agora
+        </label>
+      </div>
+    </section>
+
+    <!-- Área de Impressão da Guia -->
+    <section class="preview-section" id="guia-preview-container">
+      <div id="guia-print-area">
+        
+        <!-- 1ª VIA -->
+        <div class="guia-via" style="page-break-inside: avoid;">
+          <div style="text-align: right; font-size: 12px; font-weight: bold; color: #666; margin-bottom: -15px;">1ª VIA - REMETENTE</div>
+          <div class="guia-header" style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #000; padding-bottom: 5px; margin-bottom: 10px;">
+            <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIzLjAuNCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkNhbWFkYV8yIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB2aWV3Qm94PSIwIDAgMjgzLjQ2IDI4My40NiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjgzLjQ2IDI4My40NjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLnN0MHtmaWxsOiNGRkZGRkY7fQoJLnN0MXtmaWxsOiNFQ0IzMUY7fQo8L3N0eWxlPgo8Zz4KCTxnPgoJCTxnPgoJCQk8cGF0aCBkPSJNMTQxLjc0LDIwLjRjLTE4Ljg3LDAtMzQuMTcsMTUuMy0zNC4xNywzNC4xNmMwLDE4Ljg3LDE1LjMsMzQuMTcsMzQuMTcsMzQuMTdjMTguODYsMCwzNC4xNi0xNS4zLDM0LjE2LTM0LjE3CgkJCQlDMTc1LjksMzUuNywxNjAuNiwyMC40LDE0MS43NCwyMC40eiBNMTQxLjc0LDgzLjc0Yy0xNi4xMiwwLTI5LjE4LTEzLjA3LTI5LjE4LTI5LjE4YzAtMTYuMTEsMTMuMDctMjkuMTcsMjkuMTgtMjkuMTcKCQkJCWMxNi4xMSwwLDI5LjE3LDEzLjA3LDI5LjE3LDI5LjE3QzE3MC45MSw3MC42OCwxNTcuODQsODMuNzQsMTQxLjc0LDgzLjc0eiIvPgoJCQk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTcwLjkxLDU0LjU2YzAsMTYuMTItMTMuMDcsMjkuMTgtMjkuMTcsMjkuMThjLTE2LjEyLDAtMjkuMTgtMTMuMDctMjkuMTgtMjkuMTgKCQkJCWMwLTE2LjExLDEzLjA3LTI5LjE3LDI5LjE4LTI5LjE3QzE1Ny44NCwyNS4zOSwxNzAuOTEsMzguNDUsMTcwLjkxLDU0LjU2eiIvPgoJCTwvZz4KCQk8Zz4KCQkJPHBhdGggZD0iTTE0MS43NCwxMDcuNTdjLTE4Ljg3LDAtMzQuMTcsMTUuMy0zNC4xNywzNC4xNmMwLDE4Ljg3LDE1LjMsMzQuMTcsMzQuMTcsMzQuMTdjMTguODYsMCwzNC4xNi0xNS4zLDM0LjE2LTM0LjE3CgkJCQlDMTc1LjksMTIyLjg3LDE2MC42LDEwNy41NywxNDEuNzQsMTA3LjU3eiBNMTQxLjc0LDE3MC45MWMtMTYuMTIsMC0yOS4xOC0xMy4wNy0yOS4xOC0yOS4xOGMwLTE2LjExLDEzLjA3LTI5LjE3LDI5LjE4LTI5LjE3CgkJCQljMTYuMTEsMCwyOS4xNywxMy4wNywyOS4xNywyOS4xN0MxNzAuOTEsMTU3Ljg0LDE1Ny44NCwxNzAuOTEsMTQxLjc0LDE3MC45MXoiLz4KCQkJPHBhdGggY2xhc3M9InN0MSIgZD0iTTE3MC45MSwxNDEuNzNjMCwxNi4xMi0xMy4wNywyOS4xOC0yOS4xNywyOS4xOGMtMTYuMTIsMC0yOS4xOC0xMy4wNy0yOS4xOC0yOS4xOAoJCQkJYzAtMTYuMTEsMTMuMDctMjkuMTcsMjkuMTgtMjkuMTdDMTU3Ljg0LDExMi41NSwxNzAuOTEsMTI1LjYyLDE3MC45MSwxNDEuNzN6Ii8+CgkJPC9nPgoJCTxnPgoJCQk8cGF0aCBkPSJNMTQxLjc0LDE5NC43M2MtMTguODcsMC0zNC4xNywxNS4zLTM0LjE3LDM0LjE2YzAsMTguODcsMTUuMywzNC4xNywzNC4xNywzNC4xN2MxOC44NiwwLDM0LjE2LTE1LjMsMzQuMTYtMzQuMTcKCQkJCUMxNzUuOSwyMTAuMDMsMTYwLjYsMTk0LjczLDE0MS43NCwxOTQuNzN6IE0xNDEuNzQsMjU4LjA4Yy0xNi4xMiwwLTI5LjE4LTEzLjA3LTI5LjE4LTI5LjE4YzAtMTYuMTEsMTMuMDctMjkuMTcsMjkuMTgtMjkuMTcKCQkJCWMxNi4xMSwwLDI5LjE3LDEzLjA3LDI5LjE3LDI5LjE3QzE3MC45MSwyNDUuMDEsMTU3Ljg0LDI1OC4wOCwxNDEuNzQsMjU4LjA4eiIvPgoJCQk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTcwLjkxLDIyOC44OWMwLDE2LjEyLTEzLjA3LDI5LjE4LTI5LjE3LDI5LjE4Yy0xNi4xMiwwLTI5LjE4LTEzLjA3LTI5LjE4LTI5LjE4CgkJCQljMC0xNi4xMSwxMy4wNy0yOS4xNywyOS4xOC0yOS4xN0MxNTcuODQsMTk5LjcyLDE3MC45MSwyMTIuNzksMTcwLjkxLDIyOC44OXoiLz4KCQk8L2c+Cgk8L2c+Cgk8Zz4KCQk8cG9seWdvbiBwb2ludHM9IjI2OS4yOSwxNDIuNDUgMTk2Ljk3LDIxNC43NyAxNjQuODcsMTgyLjY3IDIwNS4xLDE0Mi40NSAxNjMuNDMsMTAwLjc5IDE5NS41Myw2OC42OSAJCSIvPgoJCTxwb2x5Z29uIHBvaW50cz0iMTQuMTcsMTQxLjAxIDg2LjQ5LDY4LjY5IDExOC41OSwxMDAuNzkgNzguMzYsMTQxLjAxIDEyMC4wMywxODIuNjcgODcuOTMsMjE0Ljc3IAkJIi8+Cgk8L2c+CjwvZz4KPC9zdmc+Cg==" alt="DETRAN BA" style="height: 35px;">
+            <h2 class="prev-g-tipo" style="margin: 0; font-size: 18px; color: #0d47a1;">GUIA DE SAÍDA</h2>
+            <p class="data-hora-impressao" style="margin: 0; font-size: 12px; color: #333; font-weight: bold;">DATA: _______/_______/_____________</p>
+          </div>
+          <div class="guia-body">
+            <div class="guia-row" style="display: flex; justify-content: space-between; gap: 10px;">
+              <span><strong>Chamado:</strong> <span class="prev-g-chamado"></span></span>
+              <span><strong>Remetente:</strong> <span class="prev-g-remetente"></span></span>
+              <span><strong>Destinatário:</strong> <span class="prev-g-destinatario"></span></span>
+            </div>
+            <hr>
+            <h3>Equipamentos</h3>
+            <table class="guia-table tabela-equipamentos">
+              <thead>
+                <tr>
+                  <th>ITEM</th>
+                  <th>MODELO/MARCA</th>
+                  <th>PATRIMONIO</th>
+                  <th>Nº DE SERIE</th>
+                  <th>NOME DA MÁQUINA</th>
+                  <th>I.P</th>
+                </tr>
+              </thead>
+              <tbody class="tabela-equipamentos-body">
+                <!-- Linhas serão inseridas aqui via JS -->
+              </tbody>
+            </table>
+            <div class="signatures">
+              <div class="signature-block">
+                <h4>Responsável CTI</h4>
+                <p class="prev-g-responsavel">Nome: _______________________________</p>
+                <p>Contato: ____________________________</p>
+                <p>Assinatura: _________________________</p>
+              </div>
+              <div class="signature-block">
+                <h4>Portador Responsável</h4>
+                <p>Nome: _______________________________</p>
+                <p>Contato: ____________________________</p>
+                <p>CPF: ________________________________</p>
+                <p>Assinatura: _________________________</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="linha-corte" style="border-top: 1px dashed #000; margin: 30px 0; border-bottom: none; border-left: none; border-right: none;" />
+
+        <!-- 2ª VIA -->
+        <div class="guia-via" style="page-break-inside: avoid;">
+          <div style="text-align: right; font-size: 12px; font-weight: bold; color: #666; margin-bottom: -15px;">2ª VIA - DESTINATÁRIO</div>
+          <div class="guia-header" style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #000; padding-bottom: 5px; margin-bottom: 10px;">
+            <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIzLjAuNCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkNhbWFkYV8yIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB2aWV3Qm94PSIwIDAgMjgzLjQ2IDI4My40NiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjgzLjQ2IDI4My40NjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLnN0MHtmaWxsOiNGRkZGRkY7fQoJLnN0MXtmaWxsOiNFQ0IzMUY7fQo8L3N0eWxlPgo8Zz4KCTxnPgoJCTxnPgoJCQk8cGF0aCBkPSJNMTQxLjc0LDIwLjRjLTE4Ljg3LDAtMzQuMTcsMTUuMy0zNC4xNywzNC4xNmMwLDE4Ljg3LDE1LjMsMzQuMTcsMzQuMTcsMzQuMTdjMTguODYsMCwzNC4xNi0xNS4zLDM0LjE2LTM0LjE3CgkJCQlDMTc1LjksMzUuNywxNjAuNiwyMC40LDE0MS43NCwyMC40eiBNMTQxLjc0LDgzLjc0Yy0xNi4xMiwwLTI5LjE4LTEzLjA3LTI5LjE4LTI5LjE4YzAtMTYuMTEsMTMuMDctMjkuMTcsMjkuMTgtMjkuMTcKCQkJCWMxNi4xMSwwLDI5LjE3LDEzLjA3LDI5LjE3LDI5LjE3QzE3MC45MSw3MC42OCwxNTcuODQsODMuNzQsMTQxLjc0LDgzLjc0eiIvPgoJCQk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTcwLjkxLDU0LjU2YzAsMTYuMTItMTMuMDcsMjkuMTgtMjkuMTcsMjkuMThjLTE2LjEyLDAtMjkuMTgtMTMuMDctMjkuMTgtMjkuMTgKCQkJCWMwLTE2LjExLDEzLjA3LTI5LjE3LDI5LjE4LTI5LjE3QzE1Ny44NCwyNS4zOSwxNzAuOTEsMzguNDUsMTcwLjkxLDU0LjU2eiIvPgoJCTwvZz4KCQk8Zz4KCQkJPHBhdGggZD0iTTE0MS43NCwxMDcuNTdjLTE4Ljg3LDAtMzQuMTcsMTUuMy0zNC4xNywzNC4xNmMwLDE4Ljg3LDE1LjMsMzQuMTcsMzQuMTcsMzQuMTdjMTguODYsMCwzNC4xNi0xNS4zLDM0LjE2LTM0LjE3CgkJCQlDMTc1LjksMTIyLjg3LDE2MC42LDEwNy41NywxNDEuNzQsMTA3LjU3eiBNMTQxLjc0LDE3MC45MWMtMTYuMTIsMC0yOS4xOC0xMy4wNy0yOS4xOC0yOS4xOGMwLTE2LjExLDEzLjA3LTI5LjE3LDI5LjE4LTI5LjE3CgkJCQljMTYuMTEsMCwyOS4xNywxMy4wNywyOS4xNywyOS4xN0MxNzAuOTEsMTU3Ljg0LDE1Ny44NCwxNzAuOTEsMTQxLjc0LDE3MC45MXoiLz4KCQkJPHBhdGggY2xhc3M9InN0MSIgZD0iTTE3MC45MSwxNDEuNzNjMCwxNi4xMi0xMy4wNywyOS4xOC0yOS4xNywyOS4xOGMtMTYuMTIsMC0yOS4xOC0xMy4wNy0yOS4xOC0yOS4xOAoJCQkJYzAtMTYuMTEsMTMuMDctMjkuMTcsMjkuMTgtMjkuMTdDMTU3Ljg0LDExMi41NSwxNzAuOTEsMTI1LjYyLDE3MC45MSwxNDEuNzN6Ii8+CgkJPC9nPgoJCTxnPgoJCQk8cGF0aCBkPSJNMTQxLjc0LDE5NC43M2MtMTguODcsMC0zNC4xNywxNS4zLTM0LjE3LDM0LjE2YzAsMTguODcsMTUuMywzNC4xNywzNC4xNywzNC4xN2MxOC44NiwwLDM0LjE2LTE1LjMsMzQuMTYtMzQuMTcKCQkJCUMxNzUuOSwyMTAuMDMsMTYwLjYsMTk0LjczLDE0MS43NCwxOTQuNzN6IE0xNDEuNzQsMjU4LjA4Yy0xNi4xMiwwLTI5LjE4LTEzLjA3LTI5LjE4LTI5LjE4YzAtMTYuMTEsMTMuMDctMjkuMTcsMjkuMTgtMjkuMTcKCQkJCWMxNi4xMSwwLDI5LjE3LDEzLjA3LDI5LjE3LDI5LjE3QzE3MC45MSwyNDUuMDEsMTU3Ljg0LDI1OC4wOCwxNDEuNzQsMjU4LjA4eiIvPgoJCQk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTcwLjkxLDIyOC44OWMwLDE2LjEyLTEzLjA3LDI5LjE4LTI5LjE3LDI5LjE4Yy0xNi4xMiwwLTI5LjE4LTEzLjA3LTI5LjE4LTI5LjE4CgkJCQljMC0xNi4xMSwxMy4wNy0yOS4xNywyOS4xOC0yOS4xN0MxNTcuODQsMTk5LjcyLDE3MC45MSwyMTIuNzksMTcwLjkxLDIyOC44OXoiLz4KCQk8L2c+Cgk8L2c+Cgk8Zz4KCQk8cG9seWdvbiBwb2ludHM9IjI2OS4yOSwxNDIuNDUgMTk2Ljk3LDIxNC43NyAxNjQuODcsMTgyLjY3IDIwNS4xLDE0Mi40NSAxNjMuNDMsMTAwLjc5IDE5NS41Myw2OC42OSAJCSIvPgoJCTxwb2x5Z29uIHBvaW50cz0iMTQuMTcsMTQxLjAxIDg2LjQ5LDY4LjY5IDExOC41OSwxMDAuNzkgNzguMzYsMTQxLjAxIDEyMC4wMywxODIuNjcgODcuOTMsMjE0Ljc3IAkJIi8+Cgk8L2c+CjwvZz4KPC9zdmc+Cg==" alt="DETRAN BA" style="height: 35px;">
+            <h2 class="prev-g-tipo" style="margin: 0; font-size: 18px; color: #0d47a1;">GUIA DE SAÍDA</h2>
+            <p class="data-hora-impressao" style="margin: 0; font-size: 12px; color: #333; font-weight: bold;">DATA: _______/_______/_____________</p>
+          </div>
+          <div class="guia-body">
+            <div class="guia-row" style="display: flex; justify-content: space-between; gap: 10px;">
+              <span><strong>Chamado:</strong> <span class="prev-g-chamado"></span></span>
+              <span><strong>Remetente:</strong> <span class="prev-g-remetente"></span></span>
+              <span><strong>Destinatário:</strong> <span class="prev-g-destinatario"></span></span>
+            </div>
+            <hr>
+            <h3>Equipamentos</h3>
+            <table class="guia-table tabela-equipamentos">
+              <thead>
+                <tr>
+                  <th>ITEM</th>
+                  <th>MODELO/MARCA</th>
+                  <th>PATRIMONIO</th>
+                  <th>Nº DE SERIE</th>
+                  <th>NOME DA MÁQUINA</th>
+                  <th>I.P</th>
+                </tr>
+              </thead>
+              <tbody class="tabela-equipamentos-body">
+                <!-- Linhas serão inseridas aqui via JS -->
+              </tbody>
+            </table>
+            <div class="signatures">
+              <div class="signature-block">
+                <h4>Responsável CTI</h4>
+                <p class="prev-g-responsavel">Nome: _______________________________</p>
+                <p>Contato: ____________________________</p>
+                <p>Assinatura: _________________________</p>
+              </div>
+              <div class="signature-block">
+                <h4>Portador Responsável</h4>
+                <p>Nome: _______________________________</p>
+                <p>Contato: ____________________________</p>
+                <p>CPF: ________________________________</p>
+                <p>Assinatura: _________________________</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal do Scanner Universal -->
+  <div class="scanner-modal-overlay" id="scanner-modal">
+    <div class="scanner-modal-content">
+      <button type="button" class="btn-close-modal" id="btn-close-scanner">&times;</button>
+      <h3>Ler Código</h3>
+      <div id="reader"></div>
+      <p id="scanner-status" style="margin-top: 10px; font-size: 14px; color: #666;">Aguardando permissão...</p>
+    </div>
+  </div>
+
+  <!-- Script para leitura do QR Code pela webcam -->
+  <script src="https://cdn.jsdelivr.net/npm/jsqr/dist/jsQR.js"></script>
+  <script src="https://unpkg.com/html5-qrcode" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="scanner.js"></script>
+  <script src="compartilhar.js"></script>
+  <script src="guias.js"></script>
+</body>
+
+</html>
